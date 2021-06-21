@@ -1,0 +1,258 @@
+Definição 
+Aplicativo de Serviços Gerais Domiciliares, que em tempos de pandemia, não será cobrado taxa alguma.
+
+Especificações dos Casos de Uso
+Nome: Manter Cadastro – UC01
+Escopo:   Sistema
+Nível de Objetivo:  de Usuário
+Contexto:  Este caso de uso permite ao profissional manter seu cadastro.
+Ator Principal:  Profissional
+Fluxo Principal: 
+1.	O profissional acessa a página de login;
+2.	O profissional escolhe fazer o cadastro;
+3.	O sistema mostra os campos a serem preenchidos; 
+4.	O profissional preenche os campos obrigatórios corretamente; [RN1]
+5.	O sistema valida os dados; [A1]
+6.	O sistema arquiva os dados;
+7.	O profissional é direcionado pra página inicial;
+8.	Fim do caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos.
+1.	Se algum dado do profissional estiver incorreto, é informado a ele o dado incorreto.
+2.	Vai para o passo 3 do fluxo principal.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
+
+
+
+Nome:  Visualizar Clientes – UC02
+Escopo: Sistema
+Nível de Objetivo:  Usuário
+Contexto:  Este caso de uso permite ao profissional visualizar seus clientes.
+Ator Principal:  Profissional
+Fluxo Principal: 
+1.	O profissional faz o login no sistema; [RN1]
+2.	O sistema valida os dados; [A1]
+3.	O profissional vai para a página inicial após preencher os dados corretamente;
+4.	O profissional entra na página de clientes;
+5.	O profissional visualiza seus clientes;
+6.	Fim de caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos 
+1.	Se algum dado de login do profissional estiver incorreto, é informado a ele o dado incorreto;
+2.	Vai para o passo 1 do fluxo principal.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nome: Gerenciar Serviços – UC03
+Escopo:   Sistema
+Nível de Objetivo:  Usuário
+Contexto:  Este caso de uso permite ao profissional gerenciar seus serviços.
+Ator Principal:  Profissional
+Fluxo Principal: 
+1.	O profissional faz o login no sistema; [RN1]
+2.	O sistema valida os dados; [A1]
+3.	O profissional vai para a página inicial após preencher os dados corretamente;
+4.	O profissional acessa a página de gerenciamento de serviços;
+5.	O profissional escolhe se quer cancelar ou fechar pedido com cliente;
+6.	O sistema faz a ação escolhida;
+7.	Fim do caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos.
+1.	Se algum dado do profissional estiver incorreto, é informado a ele o dado incorreto;
+2.	Vai para o passo 1 do fluxo principal.
+Regras de Negócio.
+RN1.Log
+2.	Todo cadastro é arquivado em banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nome:  Visualizar Serviços – UC04
+Escopo:   Sistema
+Nível de Objetivo:  Usuário
+Contexto:  Este caso de uso permite ao profissional visualizar seus serviços.
+Ator Principal:  Profissional
+Fluxo Principal: 
+1.	O profissional faz o login no sistema; [RN1]
+2.	O sistema valida os dados; [A1]
+3.	O profissional vai para a página inicial após preencher os dados corretamente;
+4.	O profissional acessa a página de visualização de serviços;
+5.	O profissional visualiza os serviços feitos ou em andamento;
+6.	Fim do caso de uso.
+ Fluxos Alternativos: 
+A1. Dados inválidos.
+1.	Se algum dado do profissional estiver incorreto, é informado a ele o dado incorreto;
+2.	Vai para o passo 1 do fluxo principal.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nome: Manter Cadastro - UC05
+Escopo:   Sistema
+Nível de Objetivo:  Usuário
+Contexto:  Este caso de uso permite ao cliente manter seu cadastro.
+Ator Principal:  Cliente
+Fluxo Principal: 
+1.	O cliente acesso a página de login;
+2.	O cliente escolhe fazer o cadastro;
+3.	O sistema mostra os campos a serem preenchidos; 
+4.	O cliente preenche os campos obrigatórios corretamente; [RN1]
+5.	O sistema valida os dados; [A1]
+6.	O sistema arquiva os dados;
+7.	O cliente é direcionado pra página inicial;
+8.	Fim do caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos 
+1.	Se algum dado do cliente estiver incorreto, é informado a ele o dado incorreto.
+2.	Vai para o passo 3 do fluxo principal.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nome: Escolher Serviço – UC06
+Escopo: Sistema
+Nível de Objetivo: Usuário
+Contexto: Este caso de uso permite ao cliente escolher um serviço para ser realizado.
+Ator Principal:  Cliente
+Fluxo Principal: 
+1.	O cliente faz o login no sistema; [RN1]
+2.	O sistema valida os dados; [A1]
+3.	O cliente vai para a página inicial após preencher os dados corretamente;
+4.	O cliente acessa a página para escolher um serviço;
+5.	O cliente escolhe um serviço;
+6.	O cliente fecha um serviço com um profissional;
+7.	Fim do caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos.
+1.	Se algum dado do cliente estiver incorreto, é informado a ele o dado incorreto.
+2.	Vai para o passo 1 do fluxo principal.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nome: Visualizar Serviços– UC07
+Escopo: Sistema
+Nível de Objetivo: de Usuário
+Contexto: Este caso de uso permite ao cliente visualizar os serviços.
+Ator Principal: Cliente
+Fluxo Principal:
+1.	O cliente faz o login no sistema; [RN1]
+2.	O sistema valida os dados; [A1]
+3.	O cliente vai para a página inicial após preencher os dados corretamente;
+4.	O cliente acessa a página de visualização de serviços;
+5.	O cliente visualiza os serviços realizados ou em andamento; [A2]
+6.	Fim do caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos.
+1.	Se algum dado do cliente estiver incorreto, é informado a ele o dado incorreto.
+2.	Vai para o passo 1 do fluxo principal.
+A2. Cancelar pedido.
+1.	Se o cliente quiser cancelar um pedido, ele deve selecionar a opção de cancelar pedido.
+2.	O sistema cancela o pedido.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nome: Consultar Feedback – UC08
+Escopo: Sistema
+Nível de Objetivo: Usuário
+Contexto: Este caso de uso permite ao cliente consultar um feedback dos clientes sobre os profissionais.
+Ator Principal: Cliente
+Fluxo Principal:
+1.	O cliente o faz o login no sistema; [RN1]
+2.	O sistema valida os dados; [A1]
+3.	O cliente vai para a página inicial após preencher os dados corretamente;
+4.	O cliente acessa a página de feedbacks.
+5.	O cliente vê os feedbacks. [A2]
+6.	Fim de caso de uso.
+Fluxos Alternativos: 
+A1. Dados inválidos.
+1.	Se algum dado do cliente estiver incorreto, é informado a ele o dado incorreto.
+2.	Vai para o passo 1 do fluxo principal.
+A2. Dar feedback.
+1.	Se o cliente quiser dar um feedback sobre o serviço realizado em sua residência, ele deve selecionar a opção de dar feedback.
+Regras de Negócio.
+RN1.Log
+1.	Todo cadastro é arquivado em banco de dados.
